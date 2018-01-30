@@ -114,6 +114,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CodeForces\CF282-D2-E.cpp" />
+    <ClCompile Include="CodeForces\CF615-D2-D.cpp" />
+    <ClCompile Include="CodeForces\CF62-D2-C.cpp" />
+    <ClCompile Include="Other\SPOJ ANTTT.cpp" />
+    <ClCompile Include="Other\SPOJ FINDSR.cpp" />
+    <ClCompile Include="Other\UVA 10002.cpp" />
+    <ClCompile Include="Other\UVA 10092.cpp" />
+    <ClCompile Include="Other\UVA 10307.cpp" />
+    <ClCompile Include="Other\UVA 10449.cpp" />
+    <ClCompile Include="Other\UVA 12716.cpp" />
     <ClCompile Include="TopCoder\SRM518-D1-500-ConvexSequence.cpp" />
     <ClCompile Include="TopCoder\SRM389-D1-500-GuitarChords.cpp" />
     <ClCompile Include="TopCoder\SRM544-D1-500-FlipGame.cpp" />
