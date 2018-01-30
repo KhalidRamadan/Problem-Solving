@@ -63,5 +63,17 @@
     <ClCompile Include="Other\UVA 12716.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TopCoder\SRM420-D1-500-RedIsGood.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM429-D1-500-IngredientProportions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM338-D1-500-RandomSwaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM396-D1-500-FixImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
