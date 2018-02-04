@@ -43,18 +43,19 @@ class PlatformJumper {
 		return ret;
 	}
 
-public: int maxCoins(vector <string> platforms, int v, int g)
-{
-	clr(mem, -1);
-	n = (int)platforms.size();
-	V = v;
-	G = g;
-	a.resize(n);
-	for (int i = 0; i < n; i++)
-		sscanf(platforms[i].c_str(), "%d %d %d", &a[i].X, &a[i].Y, &a[i].coin);
-	sort(all(a));
-	return rec(0, 51);
-}
+public: 
+	int maxCoins(vector <string> platforms, int v, int g)
+	{
+		clr(mem, -1);
+		n = (int)platforms.size();
+		V = v;
+		G = g;
+		a.resize(n);
+		for (int i = 0; i < n; i++)
+			sscanf(platforms[i].c_str(), "%d %d %d", &a[i].X, &a[i].Y, &a[i].coin);
+		sort(all(a));
+		return rec(0, 51);
+	}
 
 
 

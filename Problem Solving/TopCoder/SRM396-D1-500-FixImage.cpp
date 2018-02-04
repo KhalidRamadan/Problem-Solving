@@ -31,54 +31,55 @@ void ff(int x, int y)
 }
 
 class FixImage {
-public: vector <string> originalImage(vector <string> ans)
-{
-	int n = (int)ans.size();
-	int m = (int)ans[0].size();
-	bool ok = true;
-	while (ok)
+public: 
+	vector <string> originalImage(vector <string> ans)
 	{
-		ok = false;
-		for (int i = 0; i < n; i++)
-			for (int j = 0; j < m; j++)
-			{
-				if (ans[i][j] == '#')
+		int n = (int)ans.size();
+		int m = (int)ans[0].size();
+		bool ok = true;
+		while (ok)
+		{
+			ok = false;
+			for (int i = 0; i < n; i++)
+				for (int j = 0; j < m; j++)
 				{
-					clr(vis, 0);
-					aa = ans;
-					ff(i, j);
-					for (int i1 = 0; i1 < n; i1++)
+					if (ans[i][j] == '#')
 					{
-						int s = 0, e = 0;
-						for (int j1 = 0; j1 < m; j1++)
-							if (vis[i1][j1] == 1) { s = j1; break; }
-						for (int j1 = m - 1; j1 >= 0; j1--)
-							if (vis[i1][j1] == 1) { e = j1; break; }
-						for (int j1 = s + 1; j1 < e; j1++)
-						{
-							if (ans[i1][j1] == '.') ok = true;
-							ans[i1][j1] = '#';
-						}
-					}
-					for (int j1 = 0; j1 < m; j1++)
-					{
-						int s = 0, e = 0;
+						clr(vis, 0);
+						aa = ans;
+						ff(i, j);
 						for (int i1 = 0; i1 < n; i1++)
-							if (vis[i1][j1] == 1) { s = i1; break; }
-						for (int i1 = n - 1; i1 >= 0; i1--)
-							if (vis[i1][j1] == 1) { e = i1; break; }
-						for (int i1 = s + 1; i1 < e; i1++)
 						{
-							if (ans[i1][j1] == '.') ok = true;
-							ans[i1][j1] = '#';
+							int s = 0, e = 0;
+							for (int j1 = 0; j1 < m; j1++)
+								if (vis[i1][j1] == 1) { s = j1; break; }
+							for (int j1 = m - 1; j1 >= 0; j1--)
+								if (vis[i1][j1] == 1) { e = j1; break; }
+							for (int j1 = s + 1; j1 < e; j1++)
+							{
+								if (ans[i1][j1] == '.') ok = true;
+								ans[i1][j1] = '#';
+							}
+						}
+						for (int j1 = 0; j1 < m; j1++)
+						{
+							int s = 0, e = 0;
+							for (int i1 = 0; i1 < n; i1++)
+								if (vis[i1][j1] == 1) { s = i1; break; }
+							for (int i1 = n - 1; i1 >= 0; i1--)
+								if (vis[i1][j1] == 1) { e = i1; break; }
+							for (int i1 = s + 1; i1 < e; i1++)
+							{
+								if (ans[i1][j1] == '.') ok = true;
+								ans[i1][j1] = '#';
 
+							}
 						}
 					}
 				}
-			}
+		}
+		return ans;
 	}
-	return ans;
-}
 
 
 

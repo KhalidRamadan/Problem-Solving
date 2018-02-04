@@ -66,19 +66,20 @@ int rec(int x, vector<int> fill, int count)
 	return ret;
 }
 class GuitarChords {
-public: int stretch(vector <string> strings, vector <string> chord)
-{
-	n = (int)strings.size();
-	m = (int)chord.size();
-	map<string, int> mp;
-	for (int i = 1; i <= 12; i++)
-		mp[notes[i]] = i;
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < m; j++)
-			diff[i][j] = mod(mp[chord[j]] - mp[strings[i]], 12);
-	vector<int> fill(6);
-	return rec(0, fill, 0);
-}
+public:
+	int stretch(vector <string> strings, vector <string> chord)
+	{
+		n = (int)strings.size();
+		m = (int)chord.size();
+		map<string, int> mp;
+		for (int i = 1; i <= 12; i++)
+			mp[notes[i]] = i;
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < m; j++)
+				diff[i][j] = mod(mp[chord[j]] - mp[strings[i]], 12);
+		vector<int> fill(6);
+		return rec(0, fill, 0);
+	}
 
 
 

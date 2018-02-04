@@ -124,16 +124,27 @@
     <ClCompile Include="Other\UVA 10307.cpp" />
     <ClCompile Include="Other\UVA 10449.cpp" />
     <ClCompile Include="Other\UVA 12716.cpp" />
+    <ClCompile Include="TopCoder\Source.cpp" />
     <ClCompile Include="TopCoder\SRM338-D1-500-RandomSwaps.cpp" />
+    <ClCompile Include="TopCoder\SRM391-D1-500-KeysInBoxes.cpp" />
     <ClCompile Include="TopCoder\SRM396-D1-500-FixImage.cpp" />
+    <ClCompile Include="TopCoder\SRM409-D1-500-MagicalSpheres.cpp" />
+    <ClCompile Include="TopCoder\SRM411-D1-500-HoleCakeCuts.cpp" />
     <ClCompile Include="TopCoder\SRM420-D1-500-RedIsGood.cpp" />
     <ClCompile Include="TopCoder\SRM429-D1-500-IngredientProportions.cpp" />
+    <ClCompile Include="TopCoder\SRM473-D1-500-RightTriangle.cpp" />
+    <ClCompile Include="TopCoder\SRM480-D1-500-NetworkSecurity.cpp" />
+    <ClCompile Include="TopCoder\SRM496-D1-500-OneDimensionalBalls.cpp" />
+    <ClCompile Include="TopCoder\SRM511-D1-500-FiveHundredEleven.cpp" />
     <ClCompile Include="TopCoder\SRM518-D1-500-ConvexSequence.cpp" />
     <ClCompile Include="TopCoder\SRM389-D1-500-GuitarChords.cpp" />
+    <ClCompile Include="TopCoder\SRM525-D1-500-Rumor.cpp" />
+    <ClCompile Include="TopCoder\SRM528-D1-500-SPartition.cpp" />
     <ClCompile Include="TopCoder\SRM544-D1-500-FlipGame.cpp" />
     <ClCompile Include="TopCoder\SRM538-D1-500-TurtleSpy.cpp" />
     <ClCompile Include="TopCoder\SRM460-D1-500-TheFansAndMeetingsDivOne.cpp" />
     <ClCompile Include="TopCoder\SRM353-D1-500-PlatformJumper.cpp" />
+    <ClCompile Include="TopCoder\SRM555-D1-500-XorBoard.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

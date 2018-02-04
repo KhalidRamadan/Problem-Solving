@@ -58,16 +58,17 @@ void clc(vector<int> mi, vector<int> mx, int k, double *vec)
 
 
 class TheFansAndMeetingsDivOne {
-public: double find(vector <int> miJ, vector <int> mxJ, vector <int> miB, vector <int> mxB, int k)
-{
-	n = (int)miJ.size();
-	clc(miJ, mxJ, k, john);
-	clc(miB, mxB, k, brus);
-	double ans = 0;
-	for (int i = 1; i <= 1600; i++)
-		ans += (john[i] * brus[i]);
-	return ans;
-}
+public: 
+	double find(vector <int> miJ, vector <int> mxJ, vector <int> miB, vector <int> mxB, int k)
+	{
+		n = (int)miJ.size();
+		clc(miJ, mxJ, k, john);
+		clc(miB, mxB, k, brus);
+		double ans = 0;
+		for (int i = 1; i <= 1600; i++)
+			ans += (john[i] * brus[i]);
+		return ans;
+	}
 
 
 

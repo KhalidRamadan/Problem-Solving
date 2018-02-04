@@ -17,15 +17,16 @@ const ll OO = 1e6;
 
 
 class RandomSwaps {
-public: double getProbability(int n, int c, int a, int b)
-{
-	long double m = ((n - 1) * n) / 2;
-	double ans = (a == b);
-	cout << ans << endl;
-	while (c--)
-		ans = ((1 - ans) * (1.0 / m)) + (ans * ((m - n + 1.0) / m));
-	return ans;
-}
+public: 
+	double getProbability(int n, int c, int a, int b)
+	{
+		long double m = ((n - 1) * n) / 2;
+		double ans = (a == b);
+		cout << ans << endl;
+		while (c--)
+			ans = ((1 - ans) * (1.0 / m)) + (ans * ((m - n + 1.0) / m));
+		return ans;
+	}
 
 
 

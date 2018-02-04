@@ -75,5 +75,38 @@
     <ClCompile Include="TopCoder\SRM396-D1-500-FixImage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TopCoder\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM411-D1-500-HoleCakeCuts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM555-D1-500-XorBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM409-D1-500-MagicalSpheres.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM528-D1-500-SPartition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM473-D1-500-RightTriangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM496-D1-500-OneDimensionalBalls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM391-D1-500-KeysInBoxes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM480-D1-500-NetworkSecurity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM511-D1-500-FiveHundredEleven.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\SRM525-D1-500-Rumor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

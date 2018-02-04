@@ -18,29 +18,30 @@ const ll OO = 1e6;
 
 class FlipGame
 {
-public: int minOperations(vector <string> board)
-{
-	int n = (int)board.size();
-	int m = (int)board[0].size();
-	int ok = 1;
-	int ans = 0;
-	while (ok)
+public:
+	int minOperations(vector <string> board)
 	{
-		ok = 0;
-		for (int i = 0; i < n; i++)
+		int n = (int)board.size();
+		int m = (int)board[0].size();
+		int ok = 1;
+		int ans = 0;
+		while (ok)
 		{
-			for (int j = ok; j < m; j++)
-				if (board[i][j] == '1')
-					ok = j + 1;
-			for (int j = 0; j < ok; j++)
+			ok = 0;
+			for (int i = 0; i < n; i++)
 			{
-				if (board[i][j] == '1')
-					board[i][j] = '0';
-				else board[i][j] = '1';
+				for (int j = ok; j < m; j++)
+					if (board[i][j] == '1')
+						ok = j + 1;
+				for (int j = 0; j < ok; j++)
+				{
+					if (board[i][j] == '1')
+						board[i][j] = '0';
+					else board[i][j] = '1';
+				}
 			}
+			if (ok) ans++;
 		}
-		if (ok) ans++;
+		return ans;
 	}
-	return ans;
-}
 };

@@ -16,27 +16,28 @@ const ll OO = 1e6;
 
 
 class ConvexSequence {
-public: long long getMinimum(vector <int> a)
-{
-	int n = (int)a.size();
-	long long ans = 0;
-	bool ok = true;
-	while (ok)
+public:
+	long long getMinimum(vector <int> a)
 	{
-		ok = false;
-		for (int i = 1; i < n - 1; i++)
+		int n = (int)a.size();
+		long long ans = 0;
+		bool ok = true;
+		while (ok)
 		{
-			if (a[i - 1] + a[i + 1] < 2 * a[i])
+			ok = false;
+			for (int i = 1; i < n - 1; i++)
 			{
-				ok = true;
-				int x = (a[i - 1] + a[i + 1]) / 2;
-				ans += (a[i] - x);
-				a[i] = x;
+				if (a[i - 1] + a[i + 1] < 2 * a[i])
+				{
+					ok = true;
+					int x = (a[i - 1] + a[i + 1]) / 2;
+					ans += (a[i] - x);
+					a[i] = x;
+				}
 			}
 		}
+		return ans;
 	}
-	return ans;
-}
 
 
 

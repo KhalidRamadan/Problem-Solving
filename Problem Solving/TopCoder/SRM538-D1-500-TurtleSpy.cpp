@@ -35,31 +35,32 @@ double rec(int v, int angle)
 
 
 class TurtleSpy {
-public: double maxDistance(vector <string> commands)
-{
-	fill_n(&mem[0][0], 51 * 365, double(-1.0));
-	n = (int)commands.size();
-	for (int i = 0; i < n; i++)
+public: 
+	double maxDistance(vector <string> commands)
 	{
-		string s;
-		int c;
-		stringstream str(commands[i]);
-		str >> s >> c;
-		cout << s << "     " << c << endl;
-		if (s == "forward")
-			x += c;
-		else if (s == "backward")
-			B += c;
-		else
+		fill_n(&mem[0][0], 51 * 365, double(-1.0));
+		n = (int)commands.size();
+		for (int i = 0; i < n; i++)
 		{
-			if (s == "left")
-				c = 360 - c;
-			a.pb(c);
-		}
+			string s;
+			int c;
+			stringstream str(commands[i]);
+			str >> s >> c;
+			cout << s << "     " << c << endl;
+			if (s == "forward")
+				x += c;
+			else if (s == "backward")
+				B += c;
+			else
+			{
+				if (s == "left")
+					c = 360 - c;
+				a.pb(c);
+			}
 
+		}
+		return rec(0, 0);
 	}
-	return rec(0, 0);
-}
 
 
 
